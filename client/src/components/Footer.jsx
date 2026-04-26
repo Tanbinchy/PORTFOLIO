@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  FiGithub,
-  FiLinkedin,
-  FiTwitter,
-  FiMail,
-  FiArrowUp,
-} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter, FiArrowUp } from "react-icons/fi";
 
 const quickLinks = [
   { href: "#about", label: "About" },
