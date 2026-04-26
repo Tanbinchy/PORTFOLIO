@@ -11,8 +11,7 @@ const DEFAULTS = {
   email: "hello@alexjohnson.dev",
   available: true,
   profileImage: "",
-  resumeUrl:
-    "https://drive.google.com/uc?export=download&id=17uQCOI3aJBYABkUZKJDnWaGYs4C_21rJ",
+  resumeUrl: "/resume.pdf",
   githubUrl: "https://github.com",
   linkedinUrl: "https://linkedin.com",
   twitterUrl: "https://twitter.com",

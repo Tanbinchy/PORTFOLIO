@@ -49,7 +49,7 @@ router.post("/seed", auth, async (req, res) => {
       profileImage:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=85",
       resumeUrl:
-        "https://drive.google.com/uc?export=download&id=17uQCOI3aJBYABkUZKJDnWaGYs4C_21rJ",
+        "https://drive.google.com/file/d/17uQCOI3aJBYABkUZKJDnWaGYs4C_21rJ/view?usp=sharing",
       githubUrl: "https://github.com",
       linkedinUrl: "https://linkedin.com",
       twitterUrl: "https://twitter.com",

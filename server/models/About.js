@@ -13,11 +13,7 @@ const aboutSchema = new mongoose.Schema(
     email: { type: String, default: "hello@alexjohnson.dev" },
     available: { type: Boolean, default: true },
     profileImage: { type: String, default: "" },
-    resumeUrl: {
-      type: String,
-      default:
-        "https://drive.google.com/uc?export=download&id=17uQCOI3aJBYABkUZKJDnWaGYs4C_21rJ",
-    },
+    resumeUrl: { type: String, default: "/resume.pdf" },
     githubUrl: { type: String, default: "https://github.com" },
     linkedinUrl: { type: String, default: "https://linkedin.com" },
     twitterUrl: { type: String, default: "https://twitter.com" },
