@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FiSave, FiDatabase, FiPlus, FiX } from "react-icons/fi";
+import { FiSave, FiPlus, FiX } from "react-icons/fi";
+// import { FiDatabase } from "react-icons/fi";
+
 import API from "../../utils/api";
 
 const DEFAULTS = {
@@ -51,7 +53,7 @@ export default function AboutPanel({ showToast }) {
   const [form, setForm] = useState(DEFAULTS);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
   const [badgeInput, setBadgeInput] = useState("");
   const [imgError, setImgError] = useState(false);
 
@@ -90,19 +92,19 @@ export default function AboutPanel({ showToast }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (!window.confirm("Reset About section to sample data?")) return;
-    setSeeding(true);
-    try {
-      const { data } = await API.post("/about/seed");
-      setForm({ ...DEFAULTS, ...data.data });
-      showToast("About seeded with sample data!");
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (!window.confirm("Reset About section to sample data?")) return;
+  //   setSeeding(true);
+  //   try {
+  //     const { data } = await API.post("/about/seed");
+  //     setForm({ ...DEFAULTS, ...data.data });
+  //     showToast("About seeded with sample data!");
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   if (loading)
     return (

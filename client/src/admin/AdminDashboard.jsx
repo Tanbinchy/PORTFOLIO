@@ -54,7 +54,7 @@ export default function AdminDashboard() {
   const [sidebarOpen, setSidebar] = useState(false);
   const [counts, setCounts] = useState({});
   const [toast, setToast] = useState(null);
-  const [seedingAll, setSeedingAll] = useState(false);
+  // const [seedingAll, setSeedingAll] = useState(false);
 
   const showToast = useCallback((msg, type = "success") => {
     setToast({ msg, type });
@@ -84,34 +84,34 @@ export default function AdminDashboard() {
     navigate("/admin/login");
   };
 
-  const seedAll = async () => {
-    if (
-      !window.confirm(
-        "Seed ALL sections with sample data? This will overwrite existing data in each category.",
-      )
-    )
-      return;
-    setSeedingAll(true);
-    try {
-      await Promise.all([
-        API.post("/projects/seed/sample"),
-        API.post("/stats/seed"),
-        API.post("/about/seed"),
-        API.post("/skills/seed"),
-        API.post("/services/seed"),
-        API.post("/testimonials/seed"),
-      ]);
-      showToast("✅ All sections seeded with sample data!");
-      loadCounts();
-    } catch (err) {
-      showToast(
-        "Seeding failed: " + (err.response?.data?.message || err.message),
-        "error",
-      );
-    } finally {
-      setSeedingAll(false);
-    }
-  };
+  // const seedAll = async () => {
+  //   if (
+  //     !window.confirm(
+  //       "Seed ALL sections with sample data? This will overwrite existing data in each category.",
+  //     )
+  //   )
+  //     return;
+  //   setSeedingAll(true);
+  //   try {
+  //     await Promise.all([
+  //       API.post("/projects/seed/sample"),
+  //       API.post("/stats/seed"),
+  //       API.post("/about/seed"),
+  //       API.post("/skills/seed"),
+  //       API.post("/services/seed"),
+  //       API.post("/testimonials/seed"),
+  //     ]);
+  //     showToast("✅ All sections seeded with sample data!");
+  //     loadCounts();
+  //   } catch (err) {
+  //     showToast(
+  //       "Seeding failed: " + (err.response?.data?.message || err.message),
+  //       "error",
+  //     );
+  //   } finally {
+  //     setSeedingAll(false);
+  //   }
+  // };
 
   const panels = {
     projects: (

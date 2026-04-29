@@ -5,7 +5,7 @@ import {
   FiPlus,
   FiSave,
   FiX,
-  FiDatabase,
+  // FiDatabase,
 } from "react-icons/fi";
 import API from "../../utils/api";
 
@@ -203,7 +203,7 @@ function AddStatRow({ onAdd }) {
 export default function StatsPanel({ showToast }) {
   const [stats, setStats] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -252,19 +252,19 @@ export default function StatsPanel({ showToast }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (!window.confirm("Replace all stats with sample data?")) return;
-    setSeeding(true);
-    try {
-      const { data } = await API.post("/stats/seed");
-      setStats(data.data);
-      showToast(data.message);
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (!window.confirm("Replace all stats with sample data?")) return;
+  //   setSeeding(true);
+  //   try {
+  //     const { data } = await API.post("/stats/seed");
+  //     setStats(data.data);
+  //     showToast(data.message);
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   return (
     <div>

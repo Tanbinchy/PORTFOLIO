@@ -7,7 +7,7 @@ import {
   FiX,
   FiChevronDown,
   FiChevronUp,
-  FiDatabase,
+  // FiDatabase,
 } from "react-icons/fi";
 import API from "../../utils/api";
 
@@ -503,7 +503,7 @@ function AddCategoryForm({ onAdd }) {
 export default function SkillsPanel({ showToast }) {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -552,19 +552,19 @@ export default function SkillsPanel({ showToast }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (!window.confirm("Replace all skills with sample data?")) return;
-    setSeeding(true);
-    try {
-      const { data } = await API.post("/skills/seed");
-      setCategories(data.data);
-      showToast(data.message);
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (!window.confirm("Replace all skills with sample data?")) return;
+  //   setSeeding(true);
+  //   try {
+  //     const { data } = await API.post("/skills/seed");
+  //     setCategories(data.data);
+  //     showToast(data.message);
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   return (
     <div>

@@ -8,7 +8,7 @@ import {
   FiGithub,
   FiStar,
   FiEye,
-  FiDatabase,
+  // FiDatabase,
 } from "react-icons/fi";
 import { HiBadgeCheck } from "react-icons/hi";
 import API from "../../utils/api";
@@ -25,7 +25,7 @@ export default function ProjectsPanel({ showToast, onCountChange }) {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState(null);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -58,23 +58,23 @@ export default function ProjectsPanel({ showToast, onCountChange }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (
-      !window.confirm("This will REPLACE all projects with 13 previous ones.")
-    )
-      return;
-    setSeeding(true);
-    try {
-      await API.post("/projects/seed/sample");
-      showToast("6 sample projects seeded!");
-      await load();
-      onCountChange?.();
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (
+  //     !window.confirm("This will REPLACE all projects with 13 previous ones.")
+  //   )
+  //     return;
+  //   setSeeding(true);
+  //   try {
+  //     await API.post("/projects/seed/sample");
+  //     showToast("6 sample projects seeded!");
+  //     await load();
+  //     onCountChange?.();
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   return (
     <div>

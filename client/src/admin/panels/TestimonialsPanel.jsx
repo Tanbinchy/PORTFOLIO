@@ -5,7 +5,7 @@ import {
   FiEdit2,
   FiSave,
   FiX,
-  FiDatabase,
+  // FiDatabase,
 } from "react-icons/fi";
 import { HiStar } from "react-icons/hi";
 import API from "../../utils/api";
@@ -262,7 +262,7 @@ function TestimonialModal({ testimonial, onClose, onSave }) {
 export default function TestimonialsPanel({ showToast }) {
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
   const [modal, setModal] = useState(null);
 
   const load = useCallback(async () => {
@@ -309,19 +309,19 @@ export default function TestimonialsPanel({ showToast }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (!window.confirm("Replace all testimonials with sample data?")) return;
-    setSeeding(true);
-    try {
-      const { data } = await API.post("/testimonials/seed");
-      setTestimonials(data.data);
-      showToast(data.message);
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (!window.confirm("Replace all testimonials with sample data?")) return;
+  //   setSeeding(true);
+  //   try {
+  //     const { data } = await API.post("/testimonials/seed");
+  //     setTestimonials(data.data);
+  //     showToast(data.message);
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   return (
     <div>

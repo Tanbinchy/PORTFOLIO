@@ -5,7 +5,7 @@ import {
   FiEdit2,
   FiSave,
   FiX,
-  FiDatabase,
+  // FiDatabase,
 } from "react-icons/fi";
 import { HiBadgeCheck } from "react-icons/hi";
 import API from "../../utils/api";
@@ -253,7 +253,7 @@ function ServiceModal({ service, onClose, onSave }) {
 export default function ServicesPanel({ showToast }) {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [seeding, setSeeding] = useState(false);
+  // const [seeding, setSeeding] = useState(false);
   const [modal, setModal] = useState(null); // null | 'new' | serviceObj
 
   const load = useCallback(async () => {
@@ -300,19 +300,19 @@ export default function ServicesPanel({ showToast }) {
     }
   };
 
-  const handleSeed = async () => {
-    if (!window.confirm("Replace all services with sample data?")) return;
-    setSeeding(true);
-    try {
-      const { data } = await API.post("/services/seed");
-      setServices(data.data);
-      showToast(data.message);
-    } catch {
-      showToast("Seeding failed", "error");
-    } finally {
-      setSeeding(false);
-    }
-  };
+  // const handleSeed = async () => {
+  //   if (!window.confirm("Replace all services with sample data?")) return;
+  //   setSeeding(true);
+  //   try {
+  //     const { data } = await API.post("/services/seed");
+  //     setServices(data.data);
+  //     showToast(data.message);
+  //   } catch {
+  //     showToast("Seeding failed", "error");
+  //   } finally {
+  //     setSeeding(false);
+  //   }
+  // };
 
   return (
     <div>
