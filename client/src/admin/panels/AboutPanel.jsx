@@ -127,7 +127,7 @@ export default function AboutPanel({ showToast }) {
           </p>
         </div>
         <div className="flex gap-2">
-          <button
+          {/* <button
             onClick={handleSeed}
             disabled={seeding}
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs text-amber-400 glass border border-amber-500/20 hover:border-amber-500/40 transition-all disabled:opacity-50"
@@ -138,7 +138,7 @@ export default function AboutPanel({ showToast }) {
               <FiDatabase size={12} />
             )}{" "}
             Seed Sample
-          </button>
+          </button> */}
           <button
             onClick={handleSave}
             disabled={saving}

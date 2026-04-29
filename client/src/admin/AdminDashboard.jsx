@@ -209,7 +209,7 @@ export default function AdminDashboard() {
 
         {/* Seed All + Footer */}
         <div className="px-3 py-4 border-t border-white/6 space-y-2">
-          <button
+          {/* <button
             onClick={seedAll}
             disabled={seedingAll}
             className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-amber-400 border border-amber-500/20 hover:border-amber-500/40 hover:bg-amber-500/5 transition-all disabled:opacity-50"
@@ -224,7 +224,7 @@ export default function AdminDashboard() {
                 <FiDatabase size={13} /> Seed All Sample Data
               </>
             )}
-          </button>
+          </button> */}
           {/* Theme toggle */}
           {/* <button
             onClick={toggleTheme}

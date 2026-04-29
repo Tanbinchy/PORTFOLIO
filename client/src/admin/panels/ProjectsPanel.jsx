@@ -111,7 +111,7 @@ export default function ProjectsPanel({ showToast, onCountChange }) {
           All Projects ({projects.length})
         </h3>
         <div className="flex gap-2">
-          <button
+          {/* <button
             onClick={handleSeed}
             disabled={seeding}
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs text-amber-400 glass border border-amber-500/20 hover:border-amber-500/40 transition-all disabled:opacity-50"
@@ -122,7 +122,7 @@ export default function ProjectsPanel({ showToast, onCountChange }) {
               <FiDatabase size={12} />
             )}
             Seed Sample
-          </button>
+          </button> */}
           <Link
             to="/admin/projects/new"
             className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-indigo-500 to-violet-500 hover:shadow-lg hover:shadow-indigo-500/25 transition-all"
@@ -149,12 +149,12 @@ export default function ProjectsPanel({ showToast, onCountChange }) {
             >
               + Add Project
             </Link>
-            <button
+            {/* <button
               onClick={handleSeed}
               className="px-5 py-2.5 rounded-xl text-sm font-semibold text-amber-400 glass border border-amber-500/20"
             >
               Seed Sample
-            </button>
+            </button> */}
           </div>
         </div>
       ) : (
