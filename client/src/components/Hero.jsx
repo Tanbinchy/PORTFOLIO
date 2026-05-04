@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { FiArrowDown, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { HiSparkles } from "react-icons/hi";
@@ -163,7 +164,7 @@ export default function Hero() {
                   />
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 glass border border-white/10 rounded-2xl px-3 py-1.5 text-xs font-semibold text-white shadow-xl animate-float">
+              <div className="absolute -top-0 -right-4 glass border border-white/10 rounded-2xl px-3 py-1.5 text-xs font-semibold text-white shadow-xl animate-float">
                 ⚛️ <span className="gradient-text">React Expert</span>
               </div>
               <div className="absolute -bottom-4 -left-4 glass border border-white/10 rounded-2xl px-3 py-1.5 text-xs font-semibold text-white shadow-xl animate-float-delayed">
@@ -175,10 +176,10 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600 animate-bounce-slow">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600 animate-bounce-slow">
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <FiArrowDown size={16} />
-      </div>
+      </div> */}
     </section>
   );
 }
