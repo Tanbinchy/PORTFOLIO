@@ -94,7 +94,7 @@ export default function Hero() {
               <span className="text-white">Hi, I'm</span>
               <br />
               <span className="gradient-text">
-                {about?.name || "Alex Johnson"}
+                {about?.name || "Ashiful Hoque Chowdhury Tanbin"}
               </span>
             </h1>
 
@@ -158,7 +158,7 @@ export default function Hero() {
               >
                 <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-[calc(1.75rem-2px)] overflow-hidden bg-[#0d0d1a]">
                   <img
-                    src={about?.profileImage}
+                    src={about?.profileImage || "/profile.jpeg"}
                     alt={about?.name}
                     className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
                   />
