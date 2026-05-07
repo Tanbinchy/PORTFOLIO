@@ -104,13 +104,6 @@ This starts:
 | `http://localhost:3000`             | Portfolio website |
 | `http://localhost:3000/admin/login` | Admin panel       |
 
-### 4. Login to Admin
-
-Default credentials (change in `server/.env`):
-
-- **Email:** `admin@portfolio.com`
-- **Password:** `Admin@1234`
-
 ### 5. Seed sample projects
 
 In the Admin Dashboard → click **"Seed Sample Data"** button to populate 6 demo projects.
@@ -125,8 +118,6 @@ In the Admin Dashboard → click **"Seed Sample Data"** button to populate 6 dem
 PORT=5000
 MONGODB_URI=your_mongodb_atlas_uri_here
 JWT_SECRET=change_this_to_something_secure_in_production
-ADMIN_EMAIL=admin@portfolio.com
-ADMIN_PASSWORD=Admin@1234
 ```
 
 ### Customising your portfolio content
