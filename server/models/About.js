@@ -2,15 +2,18 @@ const mongoose = require("mongoose");
 
 const aboutSchema = new mongoose.Schema(
   {
-    name: { type: String, default: "Alex Johnson" },
+    name: { type: String, default: "Ashiful Hoque Chowdhury Tanbin" },
     tagline: {
       type: String,
       default: "Passionate developer building the future of the web",
     },
     bio1: { type: String, default: "" },
     bio2: { type: String, default: "" },
-    location: { type: String, default: "San Francisco, CA" },
-    email: { type: String, default: "hello@alexjohnson.dev" },
+    location: {
+      type: String,
+      default: "North Kattali, Chattogram, Bangladesh",
+    },
+    email: { type: String, default: "tanbinchy@gmail.com" },
     available: { type: Boolean, default: true },
     profileImage: { type: String, default: "" },
     resumeUrl: { type: String, default: "/resume.pdf" },

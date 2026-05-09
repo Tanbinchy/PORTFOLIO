@@ -39,12 +39,12 @@ router.post("/seed", auth, async (req, res) => {
   try {
     await About.deleteMany({});
     const about = new About({
-      name: "Alex Johnson",
+      name: "Ashiful Hoque Chowdhury Tanbin",
       tagline: "Passionate developer building the future of the web",
       bio1: "I'm a Full Stack Developer with over 3 years of experience designing and building web applications that are fast, scalable, and delightful to use. I specialize in the JavaScript ecosystem — from pixel-perfect React UIs to robust Node.js backends.",
       bio2: "When I'm not coding, I'm contributing to open-source projects, writing technical articles, and exploring the latest in web performance and design systems. I believe great software is equal parts engineering and empathy.",
-      location: "San Francisco, CA",
-      email: "hello@alexjohnson.dev",
+      location: "North Kattali, Chattogram, Bangladesh",
+      email: "tanbinchy@gmail.com",
       available: true,
       profileImage:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=85",

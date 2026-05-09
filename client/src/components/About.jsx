@@ -94,9 +94,12 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-3 mb-8 text-sm">
               {[
-                ["Name", about?.name || "Alex Johnson"],
-                ["Location", about?.location || "San Francisco, CA"],
-                ["Email", about?.email || "hello@alexjohnson.dev"],
+                ["Name", about?.name || "Ashiful Hoque Chowdhury Tanbin"],
+                [
+                  "Location",
+                  about?.location || "North Kattali, Chattogram, Bangladesh",
+                ],
+                ["Email", about?.email || "tanbinchy@gmail.com"],
                 [
                   "Freelance",
                   about?.available !== false ? "Available" : "Unavailable",

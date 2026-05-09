@@ -233,7 +233,7 @@ export default function Contact() {
           <div ref={rightRef} className="lg:col-span-2 flex flex-col gap-5">
             {/* Email card */}
             <a
-              href="mailto:hello@alexjohnson.dev"
+              href="mailto:tanbinchy@gmail.com"
               className="glass border border-white/8 rounded-3xl p-6 flex items-start gap-4 card-hover group hover:border-indigo-500/30"
             >
               <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500/20 transition-colors shrink-0">

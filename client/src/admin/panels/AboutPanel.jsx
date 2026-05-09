@@ -5,12 +5,12 @@ import { FiSave, FiPlus, FiX } from "react-icons/fi";
 import API from "../../utils/api";
 
 const DEFAULTS = {
-  name: "Alex Johnson",
+  name: "Ashiful Hoque Chowdhury Tanbin",
   tagline: "Passionate developer building the future of the web",
   bio1: "",
   bio2: "",
-  location: "San Francisco, CA",
-  email: "hello@alexjohnson.dev",
+  location: "North Kattali, Chattogram, Bangladesh",
+  email: "tanbinchy@gmail.com",
   available: true,
   profileImage: "",
   resumeUrl: "/resume.pdf",
@@ -168,7 +168,7 @@ export default function AboutPanel({ showToast }) {
               <Field
                 label="Full Name"
                 name="name"
-                placeholder="Alex Johnson"
+                placeholder="Ashiful Hoque Chowdhury Tanbin"
                 form={form}
                 onChange={set}
               />

@@ -1,4 +1,4 @@
-# 🚀 Alex Johnson — Full Stack Developer Portfolio
+# 🚀 Ashiful Hoque Chowdhury Tanbin — Full Stack Developer Portfolio
 
 A modern, dynamic portfolio website built with **React**, **Tailwind CSS**, **Node.js**, **Express**, and **MongoDB Atlas**. Features glassmorphism design, smooth animations, and a full admin dashboard for project management.
 
